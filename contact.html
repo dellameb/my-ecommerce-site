@@ -46,30 +46,99 @@
   </div>
 </nav>
 
-<div class="text-center">
-  <h1> SayWoof! Photography</h1>
-  <p> </p>
-  <p>Are you ready to book a session?</p>
-  <p>Do you want more information?</p>
-  <p>Let's get started...  Simply fill out the form below to create an account and let us know how we can help!</p>
-</div>
 
-<form>
-  <div class="mb-3">
-    <label for="exampleInputEmail1" class="form-label">Email address</label>
-    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+
+<main role="main">
+
+
+  <div class="container">
+
+      <div class="p-2 pt-md-4 pb-md-3 mx-auto text-center">
+          <p>Are you ready to book a session?</p>
+          <p>Let's get started...  Simply fill out the form below and let us know how we can help!</p>
+      </div>
+
+      <div class="row">
+          <div class="col-md-8 order-md-1">
+              <h4 class="mb-3">Contact Information</h4>
+              <form class="needs-validation" action="order.html" method="get" novalidate>
+                  <div class="row">
+                      <div class="col-md-6 mb-3 form-group">
+                          <label for="firstName">First name</label>
+                          <input type="text" class="form-control" id="firstName" placeholder="Your first name">
+                      </div>
+                      <div class="col-md-6 mb-3 form-group">
+                          <label for="lastName">Last name</label>
+                          <input type="text" class="form-control" id="lastName" placeholder="Your last name">
+                      </div>
+                  </div>
+
+                  <div class="mb-3">
+                      <label for="email">Email</label>
+                      <div class="input-group">
+                          <div class="input-group-prepend">
+                              <span class="input-group-text">@</span>
+                          </div>
+                          <input type="text" class="form-control" id="email" placeholder="Email" >
+                      </div>
+                  </div>
+
+                  <div class="mb-3 form-group">
+                      <label for="address">Address</label>
+                      <input type="text" class="form-control" id="address" placeholder="Street" >
+                  </div>
+
+                  <div class="mb-3">
+                      <div class="row">
+                          <div class="col-md-6 mb-3 form-group">
+                              <label for="zip">Zip</label>
+                              <input type="text" class="form-control" id="zip" placeholder="Zip code" >
+                          </div>
+                          <div class="col-md-6 mb-3 form-group">
+                              <label for="city">City</span></label>
+                              <input type="text" class="form-control" id="city" placeholder="City" >
+                          </div>
+                      </div>
+                  </div>
+
+                  <div class="row">
+                      <div class="col-md-4 mb-3 form-group">
+                          <label for="state">State</label>
+                          <select class="custom-select d-block w-100" id="state" >
+                              <option value="">Select state...</option>
+                              <option>Not applicable</option>
+                              <option> Alabama</option>
+                              <option>Alaska</option>
+                              <option>Arizona</option>
+                              <option>Arkansas</option>
+                              <option>California</option>
+                              <option>Colorado</option>
+                              <option>Connecticut</option>
+                              <option>Delaware</option>
+                              <option>Florida</option>
+                              <option>Georgia</option>
+                              <option>Hawaii</option>
+                              <option>Idaho</option>
+                          </select>
+                      </div>
+                  </div>
+
+                  <div class="mb-3">
+                      <div class="form-group">
+                          <label for="remarks">What can we help you with?</label>
+                          <textarea class="form-control" id="remarks" rows="3"></textarea>
+                      </div>
+                  </div>
+
+                  <button class="btn btn-success btn-lg btn-block mb-3"type="submit">Place your order now!</button>
+                  
+          </form>
+      </div>
   </div>
-  <div class="mb-3">
-    <label for="exampleInputPassword1" class="form-label">Password</label>
-    <input type="password" class="form-control" id="exampleInputPassword1">
-  </div>
-  <div class="mb-3 form-check">
-    <input type="checkbox" class="form-check-input" id="exampleCheck1">
-    <label class="form-check-label" for="exampleCheck1">Check me out</label>
-  </div>
-  <button type="submit" class="btn btn-primary">Submit</button>
-</form>
+</main>
+
+
+<!-- end of content from demo pie site-->
 
 
 <!-- Nav bar for footer -->
