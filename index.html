@@ -1,82 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>SayWoof! Photography</title>
   <!-- This is the bootstrap CSS-->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
 
   <style>
-      .hero {
-        height: 500px;
-        background-image: url(./assets/images/PA042029.jpg);
-        background-size: cover;
-        background-attachment: fixed;
-        background-position: center;
-      }
+    .hero {
+      height: 500px;
+      background-image: url(./assets/images/PA042029.jpg);
+      background-size: cover;
+      background-attachment: fixed;
+      background-position: center;
+    }
   </style>
 
 
 </head>
+
 <body class="bg-dark text-white">
-  
+
   <!-- Nav bar for a heading -->
-<nav class="navbar sticky-top navbar-expand-sm navbar-dark bg-dark">
-  <div class="container-fluid">
-    <span class="navbar-brand mb-0 h1">SayWoof! Photography</span>
-    <!--Nav bar with button that is responsive for sm screen-->
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <!--ms-auto margin start and set to auto-->
-      <ul class="navbar-nav ms-auto">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="portfolio.html">Portfolio</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="packages.html">Packages</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="contact.html">Contact Us</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="login.html">Login</a>
-        </li>
-      </ul>
+  <nav class="navbar sticky-top navbar-expand-sm navbar-dark bg-dark">
+    <div class="container-fluid">
+      <span class="navbar-brand mb-0 h1">SayWoof! Photography</span>
+      <!--Nav bar with button that is responsive for sm screen-->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <!--ms-auto margin start and set to auto-->
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="portfolio.html">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="packages.html">Packages</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="login.html">Login</a>
+          </li>
+        </ul>
+      </div>
     </div>
+  </nav>
+  <!--adding hero image -->
+  <div class="bg-light hero">
   </div>
-</nav>
-<!--adding hero image -->
-<div class="bg-light hero">
-</div>
-<div class="text-center">
+  <div class="text-center">
     <h1> Welcome to SayWoof! Photography</h1>
     <p> photograhy of your dog in action</p>
-</div>
+  </div>
+
+
+
+  <div class="container text-dark">
+    <div class="card-group">
+      <div class="card">
+        <img
+          src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAADICAMAAACahl6sAAAAY1BMVEX///8AAAD4+PgJCQkfHx/j4+M1NTXz8/P8/PwxMTGnp6ccHBw4ODj29vaLi4uOjo4pKSlaWlp3d3e5ublxcXFlZWWrq6vf399dXV2AgIAQEBDn5+cWFhbW1taDg4NtbW2ysrLY1doHAAAD1klEQVR4nO2d61biQBCEM5ncgCAKRkRBef+nFDessJBLZWbsNEvVPzyV6vrIDYLnTBQ5av4wsXayiF23/+08VOtH80ePqc48VPPjXGMmQd7D0HmwHsyPFhrzYE1OgzONebDsabDVmAfLnElj3miDCaJtMEG0DSaItsEE0TaYINoGE0TbYIJoG0wQbYN/DSSfVtmbNcpkt1k1zQdgrCt1DCfZag1ixEvFGN+yG+jZ13rSHzW2MuB55G42dktEs10fRwpxJK0v3DQ8b9azT4oMSXnNz1/lT3jjcHll0QmyQTKWl9f9Z7xzuLyPzgMLuV69Rlc3MK994phnuw6uTyAgmV8Pzj3OE+e853aO+A3Y/iW6HhxNh1QPlPfWfjfZA5snUdPgwnmXeOTtvY6sZePgaDmkfKC89mOrBLZeNQ9eDSkfKK9sBdkCW783D34fUj5Q3qwVBLn4Fs2DiyHlA+W1/7aFDI4vkeu4eFD7QHleIPWhcPXjZTqsfpg8L5D65Fyc/lD/nOx5srvleYHUl8v48gd+z8uvW54XSFKfnelx8qT+xONxQ/TI8wKpP1Ic3sNFZm32959gfD+iuOX5gSQNjzFyj6+VHnl+IObpekOvj/HueZ4gx/PzTP5frNzyfEHM0z9Hg/9XXdc8bxCTTH++MRfTAI9dHPP8QQ6jl6s0jtPVMsAzFOe8ECAqRBBt+v9BKIqiKMpHY9/ghoog2kQQbSKINhFEmwiiTfcF0mq68I7lI4hUQdRHEKmCqI8gUgVRH0GkCqI+gkgVRH0EkSqI+ggiVRD1EUSqIOojiFRB1EcQqYKojyBSBVEfQaQKoj6CSBVEfQSRKoj6CCJVEPXdH8gtiCDaRBBtIog23RdIq+nCO5aPIFIFUR9BpAqiPoJIFUR9BJEqiPoIIlUQ9RFEqiDqI4hUQdRHEKmCqI8gUgVRH0GkCqI+gkgVRH0EkSqI+ggiVRD1EUSqIOojiFRB1Hd/ILcggmgTQbSJINp0XyCtpgvvWD6CSBVEfQSRKoj6CCJVEPURRKog6iOIVEHURxCpgqiPIFIFUR9BpAqiPoJIFUR9BJEqiPoIIlUQ9RFEqiDqI4hUQdR3HyAWMf1yQdRnuhZ2PF9qc6yCqM90LbV5vvjpWAVRn+la/PR8OdqxCqI+07Uc7d7clPatINCSzWrUsWSz7zJ6supYRBtb1lyJ7HvXqfQxdj1cD10cUYEsP61CZdEJEqUBVjeUUNJ5YH1rdxMkya6P47BPsrFb9qtM+zkOd5ON8muX3fScHz9aV4pR7Ce0O47KX6pyq47GbsvqZd7c+Asxj1JPi6sRhAAAAABJRU5ErkJggg=="
+          style="width:60px;height:60px;" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Book a Session</h5>
+          <p class="card-text">We just need some information and we can book a session.</p>
+          <a href="#" class="btn btn-dark">Book Now</a>
+        </div>
+      </div>
+      <div class="card">
+        <img
+          src="data:image/png;base64,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"
+          style="width:60px;height:60px;" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Photography Packages</h5>
+          <p class="card-text">We offer many packages to help capture your pet..</p>
+          <a href="packages.html" class="btn btn-dark">Packages</a>
+        </div>
+      </div>
+      <div class="card">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img
+              src="data:image/png;base64,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"
+              style="width:60px;height:60px;" class="card-img-top" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">Portfolio</h5>
+              <p class="card-text">Checkout our recent images.</p>
+              <a href="portfolio.html" class="btn btn-dark">View Portfolio</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!-- Nav bar for footer -->
   <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
     <div class="container-fluid">
       <span class="navbar-brand mb-0 h1">&copy; SayWoof! Photography</span>
-        <!--ms-auto margin start and set to auto-->
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="#">Twitter</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Facebook</a>
-          </li>
-        </ul>
+      <!--ms-auto margin start and set to auto-->
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Twitter</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Facebook</a>
+        </li>
+      </ul>
     </div>
   </nav>
 
   <!-- This is the bootstrap JS-->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+    crossorigin="anonymous"></script>
 </body>
+
 </html>
